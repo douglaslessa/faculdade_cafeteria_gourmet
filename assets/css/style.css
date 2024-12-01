@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9834e;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background: #f4e6c9;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+
+.sidebar input{
+    width: 96%;
+    padding: 5px;
+}
+
+.sidebar select {
+    width: 100%;
+    padding: 5px;
+}
+
+.products {
+    width: 80%;
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background: #c96e35;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background: #8e4b22;
+}
+
+footer {
+    background: #afa082;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 30%;
+}
+
+/* Layout principal */
+main {
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 550px;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #944912;
+}
+
+.products {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card p, .product-card h3 {
+    margin: 5px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 97%;
+    height: auto;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px;
+}
+
+.product a, button {
+    display: inline-block;
+    background-color: #b15716;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product a:hover, button:hover {
+    background-color: #944912;
+}
+
+/* Formulários */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    /* padding: 10px; */
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #944912;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.lista-categorias a{
+    text-decoration: none;
+    color: #000;
+}
+
+a{
+    color: #000;
+}
+
+.pagination{
+    margin: 40px 0;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: #000;
+}
+
+.ctn-products{
+    padding: 0;
+}
+
+section.about, section.products, section.contact{
+    padding: 20px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.product-image img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.product-info {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #c2936e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #a77354;
+}
+
+/* Rodapé */
+.site-footer {
+    background-color: #e3ccb3;
+    padding: 25px 4px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section address {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #c2936e;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a img {
+    max-width: 100%;
+    height: auto;
+}
+
+.products-filter{
+    margin-top: 30px;
+}
+
+.counter_cart{
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    background-color: #fff;
+    color: #944912;
+    border-radius: 50px;
+    padding: 2px 4px;
+    font-size: 8px;
+}
